@@ -14,5 +14,8 @@
   "devDependencies": {
     "rollup": "^3.18.0"
   },
-  "type": "module"
+  "bugs": {
+    "url": "https://github.com/allen79yu/rollup-plugin-resource-query/issues"
+  },
+  "keywords": ["rollup", "plugin", "resource", "query", "svgr"]
 }
