@@ -20,11 +20,9 @@ jobs:
       - run: npm run build
       - run: npm test
 
-on:
-  release:
-    branches:
-      master:
-        - types: created
+release:
+  types: [created]
+
 jobs:
   publish-npm:
     runs-on: ubuntu-latest
