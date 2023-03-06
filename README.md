@@ -1,6 +1,6 @@
 # rollup-plugin-resource-query
 
-![npm](https://img.shields.io/npm/v/rollup-plugin-resource-query) ![NPM](https://img.shields.io/npm/l/rollup-plugin-resource-query)
+![npm](https://img.shields.io/npm/v/rollup-plugin-resource-query) ![NPM](https://img.shields.io/npm/l/rollup-plugin-resource-query) [![Coverage Status](https://coveralls.io/repos/github/allen79yu/rollup-plugin-resource-query/badge.svg?branch=master)](https://coveralls.io/github/allen79yu/rollup-plugin-resource-query?branch=master)
 
 a plugin to redirect resource query
 
