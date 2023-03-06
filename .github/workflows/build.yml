@@ -19,4 +19,4 @@ jobs:
       - run: npm ci
       - run: npm run build
       - run: npm run test
-      - run: coverallsapp/github-action@v2
+      - uses: coverallsapp/github-action@v2
