@@ -23,9 +23,9 @@ I am using both of them in my project so i write this plugin to help redirect th
 ### Step 1: install
 
 ```
-npm install rollup-plugin-resouce-query -D
+npm install rollup-plugin-resource-query -D
 // or
-yarn add rollup-plugin-resouce-query -D
+yarn add rollup-plugin-resource-query -D
 ```
 
 ### Step 2: update config
@@ -39,7 +39,7 @@ The example below will redirect `xx.svg?url` to `xx.svg`
 ```js
 import url from '@rollup/plugin-url'
 import svgr from '@svgr/rollup'
-import resourceQuery from 'rollup-plugin-resouce-query'
+import resourceQuery from 'rollup-plugin-resource-query'
 
 export default {
   plugins: [resourceQuery({ resourceQuery: 'url' }), url(), svgr()],
@@ -58,7 +58,7 @@ Then it's done. it should be work.
 ```js
 import url from '@rollup/plugin-url'
 import svgr from '@svgr/rollup'
-import resourceQuery from 'rollup-plugin-resouce-query'
+import resourceQuery from 'rollup-plugin-resource-query'
 
 const redirect = (source) => {
   return `${source}&added`
