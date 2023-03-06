@@ -1,5 +1,7 @@
 # rollup-plugin-resource-query
 
+![npm](https://img.shields.io/npm/v/rollup-plugin-resource-query) ![NPM](https://img.shields.io/npm/l/rollup-plugin-resource-query)
+
 a plugin to redirect resource query
 
 It's a tiny rollup plugin to help redirect resourcQuery
