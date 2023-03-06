@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.0.7](https://github.com/allen79yu/rollup-plugin-resource-query/compare/v1.0.6...v1.0.7) (2023-03-06)
+
+
+### CI
+
+* split yml files ([774f952](https://github.com/allen79yu/rollup-plugin-resource-query/commit/774f95221941aed120058c56201b40d8d4911d13))
+
 ### [1.0.6](https://github.com/allen79yu/rollup-plugin-resource-query/compare/v1.0.5...v1.0.6) (2023-03-06)
 
 
