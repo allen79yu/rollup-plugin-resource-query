@@ -15,11 +15,12 @@
   "scripts": {
     "dev": "rollup -c -w",
     "build": "rm -rf dist/ && rollup -c",
-    "test": "echo \"No testing for now. WIP\""
+    "test": "jest"
   },
   "author": "Allen Yu <allen79yu@gmail.com>",
   "license": "MIT",
   "devDependencies": {
+    "jest": "^29.4.3",
     "rollup": "^3.18.0"
   },
   "bugs": {

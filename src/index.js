@@ -2,13 +2,11 @@ const defaultRedirect = (source) => {
   return source.split('?')?.[0]
 }
 
-export default function rollupPluginResourceQuery({
-  resourceQuery,
-  redirect = defaultRedirect,
-} = {}) {
+export default function rollupPluginResourceQuery(options = {}) {
   return {
     name: 'rollup-plugin-resource-query',
     resolveId(source, importer) {
+      const { resourceQuery, redirect = defaultRedirect } = options || {}
       if (typeof resourceQuery !== 'string') {
         throw new Error(
           'resourceQuery option is required and should be a String'
