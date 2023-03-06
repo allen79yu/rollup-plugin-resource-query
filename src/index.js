@@ -2,15 +2,22 @@ const defaultRedirect = (source) => {
   const newSource = source.split('?')?.[0]
 }
 
-export default function rollupPluginResourceQuery ({ resourceQuery, redirect = defaultRedirect } = {}) {
+export default function rollupPluginResourceQuery({
+  resourceQuery,
+  redirect = defaultRedirect,
+} = {}) {
   return {
     name: 'rollup-plugin-resource-query',
     resolveId(source, importer) {
       if (typeof resourceQuery !== 'string') {
-        throw new Error('resourceQuery option is required and should be a String')
+        throw new Error(
+          'resourceQuery option is required and should be a String'
+        )
       }
-      if (typeof redirect !== 'function'){
-        throw new Error('redirect option should be a function or undefined (use default)')
+      if (typeof redirect !== 'function') {
+        throw new Error(
+          'redirect option should be a function or undefined (use default)'
+        )
       }
 
       const regex = /(?<=\?).*/
@@ -18,7 +25,7 @@ export default function rollupPluginResourceQuery ({ resourceQuery, redirect = d
       const resourceQueryString = match?.[0]
 
       if (!resourceQueryString) return null
-      
+
       const isResourceQueryMatch = resourceQuery === resourceQueryString
       if (isResourceQueryMatch) {
         const newSource = redirect(source)
@@ -26,6 +33,6 @@ export default function rollupPluginResourceQuery ({ resourceQuery, redirect = d
       }
 
       return null
-    }
+    },
   }
 }
