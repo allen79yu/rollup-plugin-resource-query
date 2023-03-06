@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.0.5](https://github.com/allen79yu/rollup-plugin-resource-query/compare/v1.0.2...v1.0.5) (2023-03-06)
+
+
+* **release:** 1.0.3 ([a4c85b7](https://github.com/allen79yu/rollup-plugin-resource-query/commit/a4c85b7769a163886b55fc0f1a78b9ac697749b9))
+
+
+### CI
+
+* change workflow ([23b4aab](https://github.com/allen79yu/rollup-plugin-resource-query/commit/23b4aab3ee5977cda54f637763b3270b86c5f26d))
+
 ### [1.0.3](https://github.com/allen79yu/rollup-plugin-resource-query/compare/v1.0.2...v1.0.3) (2023-03-06)
 
 ### 1.0.2 (2023-03-06)
