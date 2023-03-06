@@ -1,5 +1,5 @@
 const defaultRedirect = (source) => {
-  const newSource = source.split('?')?.[0]
+  return source.split('?')?.[0]
 }
 
 export default function rollupPluginResourceQuery({
