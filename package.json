@@ -16,7 +16,7 @@
     "dev": "rollup -c -w",
     "build": "rm -rf dist/ && rollup -c",
     "test": "jest",
-    "coveralls": "jest --coverage && cat ./coverage/lcov.info | coveralls"
+    "test:coverage": "jest --coverage"
   },
   "author": "Allen Yu <allen79yu@gmail.com>",
   "license": "MIT",
