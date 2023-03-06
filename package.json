@@ -15,7 +15,7 @@
   "scripts": {
     "dev": "rollup -c -w",
     "build": "rm -rf dist/ && rollup -c",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"No testing for now. WIP\""
   },
   "author": "Allen Yu <allen79yu@gmail.com>",
   "license": "MIT",
@@ -25,5 +25,11 @@
   "bugs": {
     "url": "https://github.com/allen79yu/rollup-plugin-resource-query/issues"
   },
-  "keywords": ["rollup", "plugin", "resource", "query", "svgr"]
+  "keywords": [
+    "rollup",
+    "plugin",
+    "resource",
+    "query",
+    "svgr"
+  ]
 }

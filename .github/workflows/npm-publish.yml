@@ -4,8 +4,9 @@
 name: Node.js Package
 
 on:
-  release:
-    types: [created]
+  push:
+    branches:
+      - master
 
 jobs:
   build:
@@ -15,7 +16,8 @@ jobs:
       - uses: actions/setup-node@v3
         with:
           node-version: 16
-      - run: npm build
+      - run: npm ci
+      - run: npm run build
       - run: npm test
 
   publish-npm:
@@ -27,7 +29,10 @@ jobs:
         with:
           node-version: 16
           registry-url: https://registry.npmjs.org/
-      - run: npm build
+      - run: npm ci
+      - run: npm run build
+      - run: npx standard-version
+      - run: git push origin
       - run: npm publish
         env:
           NODE_AUTH_TOKEN: ${{secrets.npm_token}}
