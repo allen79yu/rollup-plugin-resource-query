@@ -9,7 +9,7 @@ export default function rollupPluginResourceQuery(options = {}) {
       const { resourceQuery, redirect = defaultRedirect } = options || {}
       if (typeof resourceQuery !== 'string') {
         throw new Error(
-          'resourceQuery option is required and should be a String'
+          'resourceQuery option is required and should be a Sting'
         )
       }
       if (typeof redirect !== 'function') {
