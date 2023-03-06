@@ -2,6 +2,26 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.1.0](https://github.com/allen79yu/rollup-plugin-resource-query/compare/v1.0.7...v1.1.0) (2023-03-06)
+
+
+### Features
+
+* add custom redirect option ([8af1c35](https://github.com/allen79yu/rollup-plugin-resource-query/commit/8af1c351083a45c146beee4e3b6fff6f433048da))
+
+
+### Bug Fixes
+
+* wrong return value ([edf92ed](https://github.com/allen79yu/rollup-plugin-resource-query/commit/edf92edca251bb508387256c4fbb046cadc7d76d))
+
+
+* prettier format ([bab47df](https://github.com/allen79yu/rollup-plugin-resource-query/commit/bab47df79a708df7c99baa1614b680513d31695e))
+
+
+### Tests
+
+* add unit testings ([0934979](https://github.com/allen79yu/rollup-plugin-resource-query/commit/09349794176aeb3f8d32bf7889d96337023b0f57))
+
 ### [1.0.7](https://github.com/allen79yu/rollup-plugin-resource-query/compare/v1.0.6...v1.0.7) (2023-03-06)
 
 
