@@ -20,8 +20,13 @@ jobs:
       - run: npm run build
       - run: npm test
 
+on:
+  release:
+    branches:
+      master:
+        - types: created
+jobs:
   publish-npm:
-    needs: build
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
@@ -31,8 +36,6 @@ jobs:
           registry-url: https://registry.npmjs.org/
       - run: npm ci
       - run: npm run build
-      - run: npx standard-version
-      - run: git push origin
       - run: npm publish
         env:
           NODE_AUTH_TOKEN: ${{secrets.npm_token}}
