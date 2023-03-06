@@ -1,9 +1,17 @@
 {
   "name": "rollup-plugin-resource-query",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "a plugin to redirect resource query",
   "main": "./dist/cjs/index.js",
   "module": "./dist/es/index.js",
+  "files": [
+    "dist"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/allen79yu/rollup-plugin-resource-query.git"
+  },
+  "homepage": "https://github.com/allen79yu/rollup-plugin-resource-query",
   "scripts": {
     "dev": "rollup -c -w",
     "build": "rm -rf dist/ && rollup -c",

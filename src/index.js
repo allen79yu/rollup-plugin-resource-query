@@ -10,7 +10,7 @@ export default function rollupPluginResourceQuery ({ resourceQuery } = {}) {
       const match = source.match(regex)
       const resourceQueryString = match?.[0]
 
-      if (resourceQueryString) return null
+      if (!resourceQueryString) return null
       
       const isResourceQueryMatch = resourceQuery === resourceQueryString
       if (isResourceQueryMatch) {
